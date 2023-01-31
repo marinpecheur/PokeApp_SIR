@@ -9,8 +9,6 @@ import { PokeDetail } from '../pokemon';
   providers:[]
 })
 
-
-
 export class PokedetailComponent {
   @Input('detail')
   detail!: PokeDetail;

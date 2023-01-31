@@ -2,17 +2,18 @@ Filtre nom du pokemon :
 <input [(ngModel)]= "searchPokeName" >
 <br>
 
+Pokemon choisi n°{{selectedPokeId}} 
+<br>
 <select [(ngModel)]="selectedPokeId">
     <option [value]="poke.id" 
     *ngFor="let poke of pokes | filterPokemonPipe : 'name':searchPokeName" >{{poke.name}}</option>
 </select>
 
-<button (click)="go()">Go</button>
+<button (click)="go()">Afficher</button>
 
 <br>
 
 <div *ngIf="pokeDetail">
-    Pokemon choisi n°{{selectedPokeId}} 
     <br>
     <img [src]="urlImage"/>
     <br>

@@ -12,8 +12,9 @@ import { PokeDetail } from '../pokemon';
 
 
 export class PokedetailComponent {
-   @Input('detail')
-   detail!: PokeDetail;
+  @Input('detail')
+  detail!: PokeDetail;
+  selectedPokeId: any;
 
 
   constructor( private pokeShareInfoService: PokeShareInfoService) {

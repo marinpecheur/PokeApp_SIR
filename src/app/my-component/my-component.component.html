@@ -1,7 +1,7 @@
-Mon poke id est : {{selectedPokeId}}
+Filtre nom du pokemon :
+<input [(ngModel)]= "searchPokeName" >
 <br>
-    <input [(ngModel)]= "searchPokeName" >
-<br>
+
 <select [(ngModel)]="selectedPokeId">
     <option [value]="poke.id" 
     *ngFor="let poke of pokes | filterPokemonPipe : 'name':searchPokeName" >{{poke.name}}</option>
@@ -12,13 +12,16 @@ Mon poke id est : {{selectedPokeId}}
 <br>
 
 <div *ngIf="pokeDetail">
+    Pokemon choisi n°{{selectedPokeId}} 
+    <br>
+    <img [src]="urlImage"/>
+    <br>
     <app-pokedetail [detail]="pokeDetail"></app-pokedetail>
 </div>
-<img [src]="urlImage"/>
-
 
 <br>
 
+Ma liste de pokemon disponible :
 <ul>
     <li *ngFor="let poke of pokes">{{poke.name}}</li>
 </ul>

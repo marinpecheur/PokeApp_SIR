@@ -1,0 +1,26 @@
+button {
+
+}
+.selectid{
+  color :white
+}
+.pokeDetail{
+  color:white
+
+}
+.filterPokemonPipe {
+  color:black
+
+}
+.listNomPokemon {
+  color:white
+
+
+}
+.imagePokemon {
+  position: absolute;
+  margin-left: 50%;
+  margin-bottom: 90%;
+  height: 450px;
+  width: auto;
+}

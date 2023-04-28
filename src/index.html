@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Pokdemo</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+    <script>
+      window.addEventListener("load", function () {
+
+        setTimeout(function () {
+
+          document.querySelector(".pl").style.display = "none";
+          document.querySelector(".main-page").style.display = "block";
+        }, 2000);
+
+      });
+      </script>
+
+</head>
+<body>
+  <div class ="loader">
+    <div class="pl">
+      <div class="pl__outer-ring"></div>
+      <div class="pl__inner-ring"></div>
+      <div class="pl__track-cover"></div>
+      <div class="pl__ball">
+        <div class="pl__ball-texture"></div>
+        <div class="pl__ball-outer-shadow"></div>
+        <div class="pl__ball-inner-shadow"></div>
+        <div class="pl__ball-side-shadows"></div>
+      </div>
+    </div>
+  </div>
+  <div class ="main-page" style="display:none;">
+  <app-root></app-root>
+</div>
+</body>
+</html>

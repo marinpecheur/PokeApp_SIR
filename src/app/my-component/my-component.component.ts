@@ -21,7 +21,7 @@ export class MyComponentComponent {
     constructor(private pokeService : PokeAPIServiceService ,
        private pokeShareInfoService : PokeShareInfoService, private pokeImageService : PokeImageService
       ){
-        
+
     }
 
     ngOnInit():void{

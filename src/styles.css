@@ -1,21 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-<<<<<<< HEAD
 
 
-* {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-:root {
-	font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
-}
-body {
-	background-color: hsl(223, 90%, 95%);
-	font: 1em/1.5 sans-serif;
-	height: 100vh;
-}
 
 
 .main-page{
@@ -192,5 +177,3 @@ body {
 		transform: rotate(360deg);
 	}
 }
-=======
->>>>>>> af8df1d790593adb3bbd4a589b9c06a1cb9f6f41
